@@ -1,20 +1,26 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from 'reactstrap';
+import {
+  Container,
+  Row,
+  Col
+} from "reactstrap";
 
-function Contact(props) {
+function Contact() {
   return (
-    <div className="contact">
+  <div className="contact">
       <Container>
-        <div>
-        <Row>
-        <Col xs="6">Contact Details</Col>
-        <Col xs="6">Address</Col>
-      </Row>
+        <div className="contact-text">
+          <Col>
+           <Row ><h4>Contact Details</h4></Row>
+           <p>dfnjekvndffkvjndkf dksldkjldi</p>
+           <Row><h4>Address</h4></Row>
+           <p>dfnjekvndffkvjndkf dksldkjldi</p>
+          </Col>
         </div>
       </Container>
-    </div>
+  </div>
   );
 }
 

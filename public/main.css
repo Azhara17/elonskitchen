@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: "border-box";
+}
+
+html {
+    font-family: "Montserrat, Sans-Serif";
+}
+
+
+/*Navbar*/
+
+.navbar {
+    min-height: 6rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 0 0 0;
+    z-index: 2;
+    position: static;
+}
+
+.navbar-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.brand {
+    padding-left: 19%;
+    padding-right: 5rem;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    color: #9f4a4c;
+    text-decoration: none;
+}
+
+.brand:hover {
+    text-decoration: none;
+    color: #e0a39c;
+}
+
+.container .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 20%;
+}
+
+.instagram-icon {}
+
+
+/*intro*/
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    background-color: #fbc7c3;
+}
+
+.intro-text {
+    margin-left: 20%;
+    line-height: 1.3rem;
+}
+
+.intro-text h1 {
+    font-weight: 400;
+}
+
+.button-main {
+    width: 10rem;
+    height: 4rem;
+    text-align: center;
+    background-color: #bb5449;
+    border-radius: 3%;
+    border: none;
+    box-shadow: 5px 5px 13px -3px rgba(169, 134, 134, 0.72);
+    -webkit-box-shadow: 5px 5px 13px -3px rgba(169, 134, 134, 0.72);
+    -moz-box-shadow: 5px 5px 13px -3px rgba(169, 134, 134, 0.72);
+}
+
+.btn-text {
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+
+/*color: "#e0a39c #fbc7c3 #f6efe3 #fabb7c"*/
+
+
+/*products*/
+
+.productImg {
+    max-width: 318px;
+    max-height: 180px;
+    border-radius: 2%;
+}
+
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-header {
+    height: 30px;
+}
+
+.product-img {
+    position: relative;
+    align-items: center;
+}
+
+.product-card {
+    max-width: 400px;
+    margin: 2rem;
+    border: none;
+    box-shadow: 5px 5px 13px -3px rgba(170, 175, 175, 0.767);
+    -webkit-box-shadow: 5px 5px 13px -3px rgba(170, 175, 175, 0.767);
+    -moz-box-shadow: 5px 5px 13px -3px rgba(170, 175, 175, 0.767);
+}
+
+
+/*features*/
+
+.features-section {
+    max-width: 80%;
+    min-height: 400px;
+    background-color: #C39DAF;
+    margin-top: 5rem;
+    margin-left: 10%;
+}
+
+.features-col {
+    height: 400px;
+    text-align: center;
+}
+
+
+/*about*/
+
+.section-about {
+    min-height: 600px;
+    padding-top: 6rem;
+}
+
+.about-text {
+    position: relative;
+    text-align: left;
+    max-width: 600px !important;
+    max-height: 300px;
+    padding-top: 3rem;
+    line-height: 2.3rem;
+}
+
+.about-text p {
+    font-size: 1.3rem;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.saltanat-img {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+}
+
+
+/*contact*/
+
+.contact {
+    max-width: 80%;
+    background-color: #5c94a2c5;
+    margin-left: 10%;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 300px;
+    width: auto;
+}
+
+.contact-text {
+    padding-top: 7rem;
+    color: #ffffff;
+}
+
+
+/*footer*/
+
+.footer {
+    margin-left: 10%;
+    max-width: 80%;
+    background-color: #5c94a2c5;
+    color: #ffffff;
+}
+
+.footer .container {
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#back-top {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15rem;
+    z-index: 2;
+}
