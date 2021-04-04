@@ -3,11 +3,11 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselIndicators
 } from 'reactstrap';
 import Header from "../assets/img/header.jpg";
-import Header2 from "../assets/img/header2.jpg";
+import Header2 from "../assets/img/product4.jpg";
+/*import Header3 from "../assets/img/header3.jpg";*/
 
 const items = [
   {
@@ -19,7 +19,12 @@ const items = [
     src: Header2,
     altText: 'Slide 2',
     key: '2'
-  }
+  }/*,
+  {
+    src: Header3,
+    altText: 'Slide 2',
+    key: '2'
+  }*/
 ];
 
 

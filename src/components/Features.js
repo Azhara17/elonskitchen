@@ -7,14 +7,26 @@ const Features = (props) => {
       <Container >
         <Row xs="3">
             <Col className="features-col">
+            <span style={{color: "#69A88D"}}>
+            <i class="fas fa-seedling fa-3x"></i>
+            </span>
+            
                 <h3>dfekfdeff</h3>
                 <p>ddfsddfdfefree fvvg</p>
             </Col>
             <Col className="features-col">
+            <span style={{color: "#69A88D"}}>
+            <i class="fas fa-birthday-cake fa-3x"></i>
+            </span>
+            
                 <h3>dfekfdeff</h3>
                 <p>ddfsddfdfefree fvvg</p>
             </Col>
             <Col className="features-col">
+            <span style={{color: "#69A88D"}}>
+            <i class="fas fa-clock fa-3x"></i>
+            </span>
+
                 <h3>dfekfdeff</h3>
                 <p>ddfsddfdfefree fvvg</p>
             </Col>

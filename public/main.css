@@ -1,3 +1,5 @@
+/*colors #69A88D #E5BDB5 #F3EEE6 #073530*/
+
 * {
     margin: 0;
     padding: 0;
@@ -18,12 +20,13 @@ html {
     margin: 0 0 0 0;
     z-index: 2;
     position: static;
+    background-color: #EFEFE8FF;
 }
 
 .navbar-top {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
 }
 
 .brand {
@@ -46,13 +49,32 @@ html {
     justify-content: center;
 }
 
-.logo {
-    height: 5rem;
-    width: 5rem;
-    margin-right: 20%;
+.logo-name {
+    font-weight: 800;
 }
 
-.instagram-icon {}
+
+/*.logo {
+    height: 90px;
+    width: auto;
+    margin-right: 25%;
+}*/
+
+.header-social {
+    margin: 0;
+    position: absolute;
+    top: 3rem;
+    right: 280px;
+    list-style-type: none;
+}
+
+.header-social li {
+    margin-right: 1rem;
+}
+
+.fab:hover {
+    color: #9c3833;
+}
 
 
 /*intro*/
@@ -91,10 +113,24 @@ html {
 }
 
 
-/*color: "#e0a39c #fbc7c3 #f6efe3 #fabb7c"*/
-
-
 /*products*/
+
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.product-header {
+    color: #69A88D;
+    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+}
 
 .productImg {
     max-width: 318px;
@@ -102,20 +138,23 @@ html {
     border-radius: 2%;
 }
 
-.product-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .product-header {
     height: 30px;
+}
+
+.product-card {
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .product-img {
     position: relative;
     align-items: center;
+    transition: .7s all ease-in-out;
+}
+
+.product-img:hover {
+    transform: scale(1.2);
 }
 
 .product-card {
@@ -132,15 +171,21 @@ html {
 
 .features-section {
     max-width: 80%;
-    min-height: 400px;
-    background-color: #C39DAF;
+    min-height: 500px;
+    background-color: #F3EEE6;
     margin-top: 5rem;
     margin-left: 10%;
+    color: #595b59;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .features-col {
-    height: 400px;
+    height: 300px;
     text-align: center;
+    padding-top: 3rem;
 }
 
 
@@ -149,6 +194,10 @@ html {
 .section-about {
     min-height: 600px;
     padding-top: 6rem;
+}
+
+.about-header {
+    color: #69A88D;
 }
 
 .about-text {
@@ -181,7 +230,7 @@ html {
 
 .contact {
     max-width: 80%;
-    background-color: #5c94a2c5;
+    background-color: #69A88D;
     margin-left: 10%;
 }
 
@@ -204,7 +253,7 @@ html {
 .footer {
     margin-left: 10%;
     max-width: 80%;
-    background-color: #5c94a2c5;
+    background-color: #69A88D;
     color: #ffffff;
 }
 
@@ -222,4 +271,95 @@ html {
     position: absolute;
     right: 15rem;
     z-index: 2;
+}
+
+
+/*RESPONSIVE*/
+
+
+/*navbar*/
+
+@media screen and (max-width:1200px) {
+    .navbar {
+        font-size: 20px;
+    }
+    .header-main-nav li {
+        margin: 0 1.4rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navbar {
+        text-align: right;
+    }
+    .header-social {
+        display: none;
+    }
+}
+
+
+/*about*/
+
+@media screen and (max-width:1200px) {
+    .section-about {
+        padding-bottom: 13rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .section-about {
+        margin-top: 1366px;
+        margin-bottom: 10px;
+    }
+    .about-text {
+        column-gap: 30px;
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+    .s-about .about-text {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .section-about {
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .section-about {
+        margin-top: 1024px;
+        padding-top: 8rem;
+    }
+    .section-about .image-container {
+        max-width: 600px;
+    }
+    .section-about .about-text {
+        margin-left: 5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section-about {
+        padding-top: 1rem;
+        padding-bottom: 6rem;
+    }
+    .section-about .image-container {
+        max-width: 400px;
+    }
+    .section-about .about-text {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .section-about {
+        padding-top: 8rem;
+    }
 }

@@ -4,25 +4,26 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import Saltanat from "../assets/img/Saltanat-pic.jpg"
+import ScrollAnimation from 'react-animate-on-scroll';
+import Saltanat from "../assets/img/salta-profile1.jpg"
 
 const About = () => {
   return(
+    
     <div className="section section-about">
     <Container>
-    
       <div className="section-story-overview">
-        <Row>
+      <ScrollAnimation animateIn='fadeIn' duration="3s">
+      <Row>
           <Col md="6">
             <div
               className="image-container">
-              <img className="saltanat-img" src={Saltanat} />
+              <img className="saltanat-img" src={Saltanat} loading="lazy" alt="saltanat-img"/>
             </div>
           </Col>
           <Col className="about-text">
-            <h3>
-              So what does the new record for the lowest level of winter
-              ice actually mean
+            <h3 className="about-header">
+              ABOUT ME
             </h3>
             <p>
               The Arctic Ocean freezes every winter and much of the
@@ -36,6 +37,8 @@ const About = () => {
             </p>
           </Col>
         </Row>
+</ScrollAnimation>
+        
       </div>
     </Container>
   </div>
